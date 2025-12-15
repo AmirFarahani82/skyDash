@@ -4,13 +4,21 @@ import { FiBox } from "react-icons/fi";
 import { MdSell } from "react-icons/md";
 import { SalesBarChart } from "./SalesBarChart";
 import { BestSellingRecord, SalesData } from "../lib/types";
-import { getBestSellingProducts, getSalesPerMonth } from "../lib/data";
+import {
+  getBestSellingProducts,
+  getSalesPerMonth,
+  overallStats,
+  renevueAndOrderStats,
+} from "../lib/data";
 import BestSellingItems from "./BestSellingItems";
+import RevenueAndOrders from "./RevenueAndOrders";
 
 async function DashboardOverview() {
   const sales: SalesData = await getSalesPerMonth();
   const bestSelling: BestSellingRecord[] = await getBestSellingProducts();
-  console.log(bestSelling, Array.isArray(bestSelling));
+  const { totalRevenue, totalOrders, totalItemsSold } = await overallStats();
+  const revenueAndOrders = await renevueAndOrderStats();
+
   return (
     <div>
       <div className="flex justify-between items-center px-2.5 rounded-lg shadow-black/20 shadow-[0px_10px_20px]">
@@ -22,18 +30,25 @@ async function DashboardOverview() {
           title="Total Revenue"
           icon={<FaDollarSign />}
           currency={true}
-          amount={30000}
+          data={totalRevenue}
         />
-        <Card title="Total orders" icon={<FiBox />} amount={480} />
-        <Card title="Total Items Sold" icon={<MdSell />} amount={800} />
+        <Card title="Total orders" icon={<FiBox />} data={totalOrders} />
+        <Card
+          title="Total Items Sold"
+          icon={<MdSell />}
+          data={totalItemsSold}
+        />
       </div>
       <div className="flex mt-3.5">
-        <div className="w-[600px]">
+        <div className="w-150">
           <SalesBarChart sales={sales} />
         </div>
-        <div className="w-[350px] h-[350px]">
+        <div className="w-87.5 h-87.5">
           <BestSellingItems bestSelling={bestSelling} />
         </div>
+      </div>
+      <div>
+        <RevenueAndOrders revenueAndOrders={revenueAndOrders} />
       </div>
     </div>
   );

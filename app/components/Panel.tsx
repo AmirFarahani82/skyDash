@@ -2,7 +2,7 @@ import Navigation from "./Navigation";
 
 function Panel() {
   return (
-    <div className=" bg-white h-dvh w-75 ">
+    <div className=" bg-white h-dvh w-50 sticky top-0 shrink-0">
       <h1 className="text-sky-400 text-4xl pt-3.5 pl-3.5 font-semibold">
         SkyDash
       </h1>

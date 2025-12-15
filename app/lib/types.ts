@@ -35,4 +35,14 @@ export type BestSellingRecord = {
   title: string;
   soldCount: number;
 };
-export type BestSellingData = BestSellingRecord[];
+
+export type Statistics = {
+  _id: number;
+  revenue: number;
+  totalOrder: number;
+};
+export type RevenueAndOrder = {
+  _id: number;
+  revenue: number;
+  totalOrder: number;
+};

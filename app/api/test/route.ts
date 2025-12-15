@@ -4,12 +4,18 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const products = await getCollection("products");
+    const products = await getCollection("orders");
     const data = await products
-      .find({})
-      .sort({ soldCount: -1 })
-      .project({ title: 1, soldCount: 1 })
-      .limit(3)
+      .aggregate([
+        { $match: { status: "paid" } },
+        {
+          $group: {
+            _id: { $month: "$ordertTime" },
+            Revenue: { $sum: "subtotal" },
+          },
+        },
+        // { $sort: { _id: 1 } },
+      ])
       .toArray();
     // const sales = data.reduce((cur, acc) => cur + acc.soldCount, 0);
     // console.log(sales);
