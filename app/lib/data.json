@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "_id": "6939900f39493626a48e272f",
+      "price": 1199,
+      "soldCount": 12
+    },
+    {
+      "_id": "69399893af9e3edce7797aac",
+      "price": 1199,
+      "soldCount": 20
+    },
+    {
+      "_id": "693a9763af9e3edce7797aae",
+      "price": 999,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797aaf",
+      "price": 1099,
+      "soldCount": 15
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab0",
+      "price": 999,
+      "soldCount": 22
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab1",
+      "price": 799,
+      "soldCount": 14
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab2",
+      "price": 899,
+      "soldCount": 25
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab3",
+      "price": 799,
+      "soldCount": 19
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab4",
+      "price": 899,
+      "soldCount": 17
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab5",
+      "price": 749,
+      "soldCount": 11
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab6",
+      "price": 1099,
+      "soldCount": 13
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab7",
+      "price": 899,
+      "soldCount": 16
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab8",
+      "price": 799,
+      "soldCount": 9
+    },
+    {
+      "_id": "693a9763af9e3edce7797ab9",
+      "price": 699,
+      "soldCount": 23
+    },
+    {
+      "_id": "693a9763af9e3edce7797aba",
+      "price": 799,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797abb",
+      "price": 999,
+      "soldCount": 7
+    },
+    {
+      "_id": "693a9763af9e3edce7797abc",
+      "price": 749,
+      "soldCount": 12
+    },
+    {
+      "_id": "693a9763af9e3edce7797abd",
+      "price": 1299,
+      "soldCount": 30
+    },
+    {
+      "_id": "693a9763af9e3edce7797abe",
+      "price": 799,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797abf",
+      "price": 1199,
+      "soldCount": 17
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac0",
+      "price": 1399,
+      "soldCount": 14
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac1",
+      "price": 1299,
+      "soldCount": 9
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac2",
+      "price": 1299,
+      "soldCount": 27
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac3",
+      "price": 1899,
+      "soldCount": 21
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac4",
+      "price": 1699,
+      "soldCount": 13
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac5",
+      "price": 1399,
+      "soldCount": 11
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac6",
+      "price": 1499,
+      "soldCount": 10
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac7",
+      "price": 1299,
+      "soldCount": 9
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac8",
+      "price": 299,
+      "soldCount": 55
+    },
+    {
+      "_id": "693a9763af9e3edce7797ac9",
+      "price": 599,
+      "soldCount": 24
+    },
+    {
+      "_id": "693a9763af9e3edce7797aca",
+      "price": 249,
+      "soldCount": 28
+    },
+    {
+      "_id": "693a9763af9e3edce7797acb",
+      "price": 499,
+      "soldCount": 22
+    },
+    {
+      "_id": "693a9763af9e3edce7797acc",
+      "price": 899,
+      "soldCount": 31
+    },
+    {
+      "_id": "693a9763af9e3edce7797acd",
+      "price": 499,
+      "soldCount": 29
+    },
+    {
+      "_id": "693a9763af9e3edce7797ace",
+      "price": 249,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797acf",
+      "price": 179,
+      "soldCount": 21
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad0",
+      "price": 99,
+      "soldCount": 26
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad1",
+      "price": 199,
+      "soldCount": 14
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad2",
+      "price": 249,
+      "soldCount": 12
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad3",
+      "price": 159,
+      "soldCount": 34
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad4",
+      "price": 149,
+      "soldCount": 28
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad5",
+      "price": 119,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad6",
+      "price": 179,
+      "soldCount": 22
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad7",
+      "price": 199,
+      "soldCount": 30
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad8",
+      "price": 69,
+      "soldCount": 42
+    },
+    {
+      "_id": "693a9763af9e3edce7797ad9",
+      "price": 79,
+      "soldCount": 35
+    },
+    {
+      "_id": "693a9763af9e3edce7797ada",
+      "price": 49,
+      "soldCount": 27
+    },
+    {
+      "_id": "693a9763af9e3edce7797adb",
+      "price": 99,
+      "soldCount": 16
+    },
+    {
+      "_id": "693a9763af9e3edce7797adc",
+      "price": 109,
+      "soldCount": 19
+    },
+    {
+      "_id": "693a9763af9e3edce7797add",
+      "price": 59,
+      "soldCount": 20
+    },
+    {
+      "_id": "693a9763af9e3edce7797ade",
+      "price": 49,
+      "soldCount": 17
+    },
+    {
+      "_id": "693a9763af9e3edce7797adf",
+      "price": 89,
+      "soldCount": 12
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae0",
+      "price": 89,
+      "soldCount": 31
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae1",
+      "price": 79,
+      "soldCount": 26
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae2",
+      "price": 129,
+      "soldCount": 14
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae3",
+      "price": 99,
+      "soldCount": 22
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae4",
+      "price": 69,
+      "soldCount": 38
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae5",
+      "price": 65,
+      "soldCount": 33
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae6",
+      "price": 75,
+      "soldCount": 29
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae7",
+      "price": 49,
+      "soldCount": 24
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae8",
+      "price": 59,
+      "soldCount": 18
+    },
+    {
+      "_id": "693a9763af9e3edce7797ae9",
+      "price": 39,
+      "soldCount": 31
+    },
+    {
+      "_id": "693a9763af9e3edce7797aea",
+      "price": 32,
+      "soldCount": 22
+    },
+    {
+      "_id": "693a9763af9e3edce7797aeb",
+      "price": 139,
+      "soldCount": 11
+    },
+    {
+      "_id": "693a9763af9e3edce7797aec",
+      "price": 55,
+      "soldCount": 17
+    }
+  ]
+}
