@@ -1,7 +1,7 @@
 import { ObjectId } from "mongodb";
 
 export type Product = {
-  _id?: string;
+  _id?: ObjectId;
   title: string;
   price: number;
   soldCount: number;
@@ -13,17 +13,19 @@ export type OrderItem = { productId: ObjectId; qty: number; unitPrice: number };
 export type Order = {
   _id?: ObjectId;
   purchasedBy: ObjectId;
-  status: "pending" | "paid" | "deliverd" | "cancelled";
+  status: "pending" | "paid" | "cancelled";
   items: OrderItem[];
   subtotal: number;
   orderTime: Date;
-}[];
+};
 
 export type Customer = {
-  _id?: string;
+  _id?: ObjectId;
   name: string;
   email: string;
 };
+export type CustomerOrder = { customer: Customer[] } & Order;
+
 export type SalesRecord = {
   _id: number;
   sellsCount: number;

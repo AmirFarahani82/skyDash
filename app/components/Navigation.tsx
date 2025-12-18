@@ -15,7 +15,6 @@ function Navigation() {
     },
   ];
 
-  console.log(pathname);
   return (
     <div className="flex flex-col gap-2 pt-3 pl-4">
       {links.map((link) => (

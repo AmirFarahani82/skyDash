@@ -23,7 +23,7 @@ async function DashboardOverview() {
     <div>
       <div className="flex justify-between items-center px-2.5 rounded-lg shadow-black/20 shadow-[0px_10px_20px]">
         <h2 className="text-2xl">Dashboard overview</h2>
-        <p>from 2025-01-01 to 2025-12-30</p>
+        <p>from 2025-01-01 to 2025-12-31</p>
       </div>
       <div className="flex gap-4">
         <Card

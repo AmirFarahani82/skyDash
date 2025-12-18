@@ -2,10 +2,10 @@ import { Document, WithId } from "mongodb";
 import { connectToDatabase } from "./mongodb";
 import {
   BestSellingRecord,
+  CustomerOrder,
   RevenueAndOrder,
   SalesData,
   SalesRecord,
-  Statistics,
 } from "./types";
 
 export async function getCollection<T extends Document>(
@@ -119,6 +119,27 @@ export async function renevueAndOrderStats(): Promise<RevenueAndOrder[]> {
         },
       },
     ])
+    .toArray();
+  return data;
+}
+
+export async function getOrders(status: string): Promise<CustomerOrder[]> {
+  const orders = await getCollection("orders");
+  const filter = status ? { $match: { status } } : { $match: {} };
+
+  const data = await orders
+    .aggregate<CustomerOrder>([
+      filter,
+      {
+        $lookup: {
+          from: "customers",
+          localField: "purchasedBy",
+          foreignField: "_id",
+          as: "customer",
+        },
+      },
+    ])
+    .sort({ orderTime: -1 })
     .toArray();
   return data;
 }
