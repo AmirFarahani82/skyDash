@@ -123,13 +123,20 @@ export async function renevueAndOrderStats(): Promise<RevenueAndOrder[]> {
   return data;
 }
 
-export async function getOrders(status: string): Promise<CustomerOrder[]> {
+export async function getOrders(
+  status: string,
+  page: string = "1"
+): Promise<{ data: CustomerOrder[]; ordersCount: number }> {
   const orders = await getCollection("orders");
   const filter = status ? { $match: { status } } : { $match: {} };
+  const limit = 10;
 
-  const data = await orders
+  const data: CustomerOrder[] = await orders
     .aggregate<CustomerOrder>([
       filter,
+      { $sort: { orderTime: -1 } },
+      { $skip: (Number(page) - 1) * limit },
+      { $limit: limit },
       {
         $lookup: {
           from: "customers",
@@ -139,7 +146,11 @@ export async function getOrders(status: string): Promise<CustomerOrder[]> {
         },
       },
     ])
-    .sort({ orderTime: -1 })
     .toArray();
-  return data;
+
+  const ordersCount = status
+    ? await orders.countDocuments({ status: status })
+    : await orders.countDocuments();
+
+  return { data, ordersCount };
 }

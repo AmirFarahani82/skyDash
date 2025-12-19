@@ -24,7 +24,9 @@ export type Customer = {
   name: string;
   email: string;
 };
-export type CustomerOrder = { customer: Customer[] } & Order;
+export type CustomerOrder = {
+  customer: Customer[];
+} & Order;
 
 export type SalesRecord = {
   _id: number;
